@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Curso Laravel
+                    Curso de PHP con Laravel - Platzi
                 </div>
 
                 <div class="links">
