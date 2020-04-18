@@ -13,12 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
-Route::get('/test', function () {
-    return view('test', [
-        'title' => 'Curso de PHP con Laravel - Platzi'
-    ]);
-});
+Route::get('/dashboard', 'DashboardController@index');
