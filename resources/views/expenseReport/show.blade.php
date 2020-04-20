@@ -15,6 +15,12 @@
 
     <div class="row">
         <div class="col">
+            <a class="btn btn-primary" href="/expense_reports/{{ $report->id }}/confirmSendEmail">Send Email</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
             <h3>Details</h3>
             <table class="table">
                 <thead>

@@ -19,6 +19,8 @@ Route::get('/dashboard', 'DashboardController@index');
 
 Route::resource('/expense_reports', 'ExpenseReportController');
 Route::get('/expense_reports/{id}/confirmDelete', 'ExpenseReportController@confirmDelete');
+Route::get('/expense_reports/{id}/confirmSendEmail', 'ExpenseReportController@confirmSendEmail');
+Route::post('/expense_reports/{id}/sendEmail', 'ExpenseReportController@sendEmail');
 
 Route::get('/expense_reports/{id}/expenses/create', 'ExpenseController@create');
 Route::post('/expense_reports/{id}/expenses', 'ExpenseController@store');
